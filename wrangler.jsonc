@@ -1,0 +1,19 @@
+{
+  // Cloudflare Workers static-site config.
+  //
+  // There is deliberately no "main" entry point: with only an "assets" block
+  // this is a static-asset Worker, so no Worker script ever runs. Static asset
+  // requests are free and unbilled, which keeps the whole site on the free
+  // tier no matter how much traffic it gets.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fun-game-arena",
+  "compatibility_date": "2026-10-04",
+  "assets": {
+    // What `npm run build` produces.
+    "directory": "./dist",
+    // The site is a single-page app: /book and /my-bookings are client-side
+    // routes with no file on disk, so unmatched paths must serve index.html
+    // instead of a 404. Without this, a direct visit or refresh on /book 404s.
+    "not_found_handling": "single-page-application"
+  }
+}
