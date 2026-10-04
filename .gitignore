@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+
+# Credentials — set these in your hosting provider's env vars instead.
+.env
+.env.local
+.env.*.local
