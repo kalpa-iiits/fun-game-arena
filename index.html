@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- ================= SEO =================
-     URLs come from VITE_SITE_URL (.env, and your host's env vars). -->
+     __SITE_URL__ is substituted at build time from VITE_SITE_URL. If that
+     variable is unset these tags are dropped rather than emitting a bad URL;
+     see the siteUrl plugin in vite.config.js. -->
 <title>Fun Game Arena | Indoor Cricket Nets, 8-Ball Pool &amp; Table Tennis</title>
 <meta name="description" content="Fun Game Arena — three games under one roof. Indoor cricket nets with a 130+ km/h bowling machine (spin &amp; swing), tournament-cloth 8-ball pool and match-spec table tennis. All ages, all levels. Walk in or book online from ₹75. Lal Ganesh, Lokhra Road, Guwahati." />
 <meta name="keywords" content="fun game arena, indoor games arena, indoor cricket nets, bowling machine practice, cricket net booking, 8 ball pool tables, pool table booking, table tennis booking, indoor games near me, cricket batting practice, group games booking, corporate games booking" />
@@ -15,7 +17,7 @@
 <meta name="geo.placename" content="Guwahati, Assam" />
 <meta name="geo.position" content="26.1396573;91.7382727" />
 <meta name="ICBM" content="26.1396573, 91.7382727" />
-<link rel="canonical" href="%VITE_SITE_URL%/" />
+<link rel="canonical" href="__SITE_URL__/" />
 <meta name="theme-color" content="#06070a" />
 <link rel="icon" href="/assets/fga-logo.png" />
 <link rel="apple-touch-icon" href="/assets/fga-logo.png" />
@@ -24,16 +26,16 @@
 <meta property="og:type" content="business.business" />
 <meta property="og:title" content="Fun Game Arena | Test Your Gaming Limits" />
 <meta property="og:description" content="Indoor cricket nets, 8-ball pool and table tennis under one roof. All ages, all levels. Walk in or book online." />
-<meta property="og:image" content="%VITE_SITE_URL%/assets/fga-logo.png" />
+<meta property="og:image" content="__SITE_URL__/assets/fga-logo.png" />
 <meta property="og:locale" content="en_IN" />
 <meta property="og:site_name" content="Fun Game Arena" />
-<meta property="og:url" content="%VITE_SITE_URL%/" />
+<meta property="og:url" content="__SITE_URL__/" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Fun Game Arena | Test Your Gaming Limits" />
 <meta name="twitter:description" content="Cricket nets, 8-ball pool and table tennis under one roof. Walk in or book online." />
-<meta name="twitter:image" content="%VITE_SITE_URL%/assets/fga-logo.png" />
+<meta name="twitter:image" content="__SITE_URL__/assets/fga-logo.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
