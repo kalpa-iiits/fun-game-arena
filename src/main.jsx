@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import Book from './pages/Book.jsx';
 import MyBookings from './pages/MyBookings.jsx';
+import Admin from './pages/Admin.jsx';
 import './styles/global.css';
 import './styles/book.css';
 
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Home />} />
         <Route path="/book" element={<Book />} />
         <Route path="/my-bookings" element={<MyBookings />} />
+        <Route path="/admin" element={<Admin />} />
         {/* anything else falls back to the landing page */}
         <Route path="*" element={<Home />} />
       </Routes>
