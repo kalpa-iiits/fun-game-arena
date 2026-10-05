@@ -54,8 +54,8 @@ export const localBusinessSchema = {
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-      opens: '10:30',
-      closes: '22:00',
+      opens: '18:00',
+      closes: '23:30',
     },
   ],
   logo: { '@type': 'ImageObject', url: `${SITE}/assets/fga-logo.png` },
