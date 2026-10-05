@@ -34,8 +34,8 @@ export const BUSINESS = {
   postalCode: '781035',
   geo: { lat: 26.1396573, lng: 91.7382727 },
 
-  hours: 'Open daily · 6:00 PM – 11:30 PM',
-  hoursShort: '6:00 PM – 11:30 PM',
+  hours: 'Open daily · 6:00 AM – 11:30 PM',
+  hoursShort: '6:00 AM – 11:30 PM',
 
   mapsLink: 'https://maps.app.goo.gl/anQUXz7VNxDFogEd7',
   // Centred on the arena rather than a text search, so the pin can't drift
@@ -62,7 +62,7 @@ export const LINKS = {
    available time on the booking page.
    --------------------------------------------------------------------------- */
 export const BOOKING = {
-  open: '18:00',
+  open: '06:00',
   close: '23:30',
   daysAhead: 14,        // how many date chips to offer
   leadTimeMin: 90,      // a slot must be this far in the future to be bookable
@@ -93,7 +93,7 @@ export const TICKER_ITEMS = [
 export const SCORES = [
   { to: 130, suffix: '+', unit: 'km/h top speed', accent: 'var(--red)', speed: true },
   { to: 3, unit: 'game arenas', accent: 'var(--gold)' },
-  { text: '11:30', unit: 'open till, every night', accent: 'var(--blue)' },
+  { to: 17, suffix: 'hrs+', unit: 'open every day', accent: 'var(--blue)' },
   { text: 'All', unit: 'ages & levels', accent: 'var(--steel-2)' },
 ];
 
